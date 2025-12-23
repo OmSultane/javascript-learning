@@ -16,9 +16,20 @@
 //--------------------Symbol----------------------
 const id = Symbol('123');
 
-const anotherId = Synbol('123')
+const anotherId = Symbol('123')
 
 console.log(id === anotherId);    // o/p : false  Symbol returns different values that's the reason of symbol method use
 
+
+
+let obj1 = {
+    name:"om"
+}
+
+let obj2 = obj1;
+
+obj2.name="pranva"
+
+console.log(obj1.name);
 
 
